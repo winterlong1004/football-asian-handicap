@@ -1,0 +1,67 @@
+{
+  "id": "R79",
+  "date": "2026-05-23",
+  "league": "瑞典超",
+  "home_team": "尤尔加登",
+  "away_team": "布洛马波卡纳",
+  "actual_score": "1-2",
+  "ah_result": "赢",
+  "companies": {
+    "澳*": {
+      "handicap": 1.25,
+      "home_water": 1.03,
+      "away_water": 0.75,
+      "h_change": -0.08,
+      "a_change": -0.11,
+      "trend": "持平"
+    },
+    "明*": {
+      "handicap": 1.25,
+      "home_water": 1.11,
+      "away_water": 0.82,
+      "h_change": 0.02,
+      "a_change": -0.08,
+      "trend": "持平"
+    },
+    "港马*": {
+      "handicap": 1.25,
+      "home_water": 1.01,
+      "away_water": 0.80,
+      "h_change": -0.02,
+      "a_change": -0.08,
+      "trend": "持平"
+    },
+    "36*": {
+      "handicap": 1.0,
+      "home_water": 0.88,
+      "away_water": 1.02,
+      "h_change": -0.03,
+      "a_change": 0.09,
+      "trend": "持平"
+    },
+    "Interwet*": {
+      "handicap": 1.0,
+      "home_water": 0.70,
+      "away_water": 1.05,
+      "h_change": -0.15,
+      "a_change": 0.20,
+      "trend": "持平"
+    },
+    "易*": {
+      "handicap": 1.25,
+      "home_water": 1.09,
+      "away_water": 0.80,
+      "h_change": 0.04,
+      "a_change": -0.07,
+      "trend": "持平"
+    },
+    "Crow*": {
+      "handicap": 1.0,
+      "home_water": 1.02,
+      "away_water": 1.06,
+      "h_change": -0.05,
+      "a_change": 0.15,
+      "trend": "降盘"
+    }
+  }
+}

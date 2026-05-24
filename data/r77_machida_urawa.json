@@ -1,0 +1,67 @@
+{
+  "id": "R77",
+  "date": "2026-05-22",
+  "league": "日职联",
+  "home_team": "町田泽维亚",
+  "away_team": "浦和红钻",
+  "actual_score": "1-0",
+  "ah_result": "赢",
+  "companies": {
+    "澳*": {
+      "handicap": 0.25,
+      "home_water": 0.90,
+      "away_water": 0.94,
+      "h_change": -0.04,
+      "a_change": 0.03,
+      "trend": "持平"
+    },
+    "明*": {
+      "handicap": 0.25,
+      "home_water": 0.93,
+      "away_water": 0.99,
+      "h_change": -0.05,
+      "a_change": 0.08,
+      "trend": "持平"
+    },
+    "港马*": {
+      "handicap": 0.25,
+      "home_water": 1.05,
+      "away_water": 0.87,
+      "h_change": 0.08,
+      "a_change": -0.05,
+      "trend": "持平"
+    },
+    "36*": {
+      "handicap": 0.25,
+      "home_water": 0.85,
+      "away_water": 0.95,
+      "h_change": -0.06,
+      "a_change": 0.04,
+      "trend": "持平"
+    },
+    "Interwet*": {
+      "handicap": 0.0,
+      "home_water": 0.00,
+      "away_water": 1.25,
+      "h_change": -0.65,
+      "a_change": 0.62,
+      "trend": "退盘"
+    },
+    "易*": {
+      "handicap": 0.25,
+      "home_water": 0.89,
+      "away_water": 0.99,
+      "h_change": -0.03,
+      "a_change": 0.05,
+      "trend": "持平"
+    },
+    "Crow*": {
+      "handicap": 0.25,
+      "home_water": 0.85,
+      "away_water": 1.02,
+      "h_change": -0.02,
+      "a_change": 0.06,
+      "trend": "持平"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "R69",
+  "date": "2026-05-18",
+  "league": "瑞士超",
+  "home_team": "卢加诺",
+  "away_team": "巴塞尔",
+  "actual_score": "4-0",
+  "ah_result": "赢",
+  "companies": {
+    "澳*": {
+      "handicap": 1.0,
+      "home_water": 0.70,
+      "away_water": 1.08,
+      "h_change": -0.10,
+      "a_change": 0.12,
+      "trend": "升盘"
+    },
+    "明*": {
+      "handicap": 1.0,
+      "home_water": 0.84,
+      "away_water": 1.08,
+      "h_change": -0.04,
+      "a_change": 0.06,
+      "trend": "升盘"
+    },
+    "港马*": {
+      "handicap": 1.0,
+      "home_water": 0.82,
+      "away_water": 1.05,
+      "h_change": -0.06,
+      "a_change": 0.08,
+      "trend": "升盘"
+    },
+    "36*": {
+      "handicap": 1.0,
+      "home_water": 0.80,
+      "away_water": 1.00,
+      "h_change": -0.02,
+      "a_change": 0.04,
+      "trend": "升盘"
+    },
+    "Interwet*": {
+      "handicap": 1.0,
+      "home_water": 0.75,
+      "away_water": 0.97,
+      "h_change": -0.12,
+      "a_change": 0.10,
+      "trend": "升盘"
+    },
+    "易*": {
+      "handicap": 1.25,
+      "home_water": 1.05,
+      "away_water": 0.83,
+      "h_change": 0.15,
+      "a_change": -0.10,
+      "trend": "升盘"
+    },
+    "Crow*": {
+      "handicap": 1.0,
+      "home_water": 0.80,
+      "away_water": 1.06,
+      "h_change": -0.03,
+      "a_change": 0.05,
+      "trend": "升盘"
+    }
+  }
+}
