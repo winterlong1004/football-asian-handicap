@@ -995,7 +995,7 @@ def show_stats():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="亚盘专属分析工具 v1.0",
+        description="亚盘专属分析工具 v1.2",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例：
@@ -1046,7 +1046,7 @@ def main():
         return
 
     # 无参数 → 交互模式
-    print("📊 亚盘专属分析工具 v1.0")
+    print("📊 亚盘专属分析工具 v1.2")
     print()
     print("使用方法：")
     print("  python asian_handicap.py --input data/xxx.json    单场分析")
