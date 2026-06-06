@@ -336,10 +336,10 @@ def check_rule_p1(state_factors, asian_direction):
     IF 主队连胜≥3 AND 客队连败≥2 AND 亚盘方向≠主 → 触发背离警告，降级1星
     IF 客队连胜≥3 AND 主队连败≥2 AND 亚盘方向≠客 → 触发背离警告，降级1星
     """
-    h_ws = state_factors.get("home_win_streak", 0)
-    h_ls = state_factors.get("home_loss_streak", 0)
-    a_ws = state_factors.get("away_win_streak", 0)
-    a_ls = state_factors.get("away_loss_streak", 0)
+    h_ws = state_factors.get("home_win_streak") or 0
+    h_ls = state_factors.get("home_loss_streak") or 0
+    a_ws = state_factors.get("away_win_streak") or 0
+    a_ls = state_factors.get("away_loss_streak") or 0
 
     # 场景1：主队动量强势但亚盘不看主
     if h_ws >= PODOS_P1_MOMENTUM and a_ls >= 2:
@@ -581,12 +581,12 @@ def calculate_state_factors(home_team, away_team, league, history=None, input_fa
 def evaluate_state_signal(factors):
     """评估状态因子信号 — 返回方向倾向和加分"""
     signal = {"direction": None, "bonus": 0, "detail": []}
-    h_ws = factors.get("home_win_streak", 0)
-    h_ls = factors.get("home_loss_streak", 0)
-    a_ws = factors.get("away_win_streak", 0)
-    a_ls = factors.get("away_loss_streak", 0)
-    h_form = factors.get("home_form_score", 0.5)
-    a_form = factors.get("away_form_score", 0.5)
+    h_ws = factors.get("home_win_streak") or 0
+    h_ls = factors.get("home_loss_streak") or 0
+    a_ws = factors.get("away_win_streak") or 0
+    a_ls = factors.get("away_loss_streak") or 0
+    h_form = factors.get("home_form_score") if factors.get("home_form_score") is not None else 0.5
+    a_form = factors.get("away_form_score") if factors.get("away_form_score") is not None else 0.5
 
     if h_ws >= STREAK_THRESHOLD:
         signal["detail"].append(f"主队{h_ws}连胜");  signal["bonus"] += 0.3
@@ -1009,10 +1009,14 @@ def generate_euro_asian_report(result):
     sf = result["state_factors"]
     lines.append(f"| 指标 | 主队 | 客队 |")
     lines.append(f"|:---|:---:|:---:|")
-    lines.append(f"| 连胜 | {sf.get('home_win_streak',0)} | {sf.get('away_win_streak',0)} |")
-    lines.append(f"| 连败 | {sf.get('home_loss_streak',0)} | {sf.get('away_loss_streak',0)} |")
-    lines.append(f"| 近期 | {sf.get('home_form_detail','?')} | {sf.get('away_form_detail','?')} |")
-    lines.append(f"| 评分 | {sf.get('home_form_score',0.5):.2f} | {sf.get('away_form_score',0.5):.2f} |")
+    lines.append(f"| 连胜 | {sf.get('home_win_streak') or 0} | {sf.get('away_win_streak') or 0} |")
+    lines.append(f"| 连败 | {sf.get('home_loss_streak') or 0} | {sf.get('away_loss_streak') or 0} |")
+    lines.append(f"| 近期 | {sf.get('home_form_detail') or '?'} | {sf.get('away_form_detail') or '?'} |")
+    hfs = sf.get('home_form_score')
+    afs = sf.get('away_form_score')
+    hfs_str = f"{hfs:.2f}" if hfs is not None else "N/A"
+    afs_str = f"{afs:.2f}" if afs is not None else "N/A"
+    lines.append(f"| 评分 | {hfs_str} | {afs_str} |")
     home_ppg = sf.get("home_ppg")
     away_away_ppg = sf.get("away_away_ppg")
     if home_ppg is not None and away_away_ppg is not None:

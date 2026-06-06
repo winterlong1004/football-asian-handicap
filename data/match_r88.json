@@ -1,0 +1,111 @@
+{
+  "id": "R88",
+  "date": "2026-06-06",
+  "league": "日职甲",
+  "home_team": "鹿岛鹿角",
+  "away_team": "神户胜利船",
+  "asian_companies": {
+    "澳*": {
+      "handicap": -0.5,
+      "home_water": 0.88,
+      "away_water": 0.96,
+      "h_change": 0.08,
+      "a_change": -0.08,
+      "trend": "客降"
+    },
+    "36*": {
+      "handicap": -0.5,
+      "home_water": 0.88,
+      "away_water": 0.93,
+      "h_change": 0.10,
+      "a_change": -0.10,
+      "trend": "客降"
+    },
+    "易*": {
+      "handicap": -0.5,
+      "home_water": 0.94,
+      "away_water": 0.98,
+      "h_change": 0.14,
+      "a_change": -0.07,
+      "trend": "客降"
+    },
+    "明*": {
+      "handicap": -0.5,
+      "home_water": 0.94,
+      "away_water": 0.98,
+      "h_change": 0.12,
+      "a_change": -0.08,
+      "trend": "客降"
+    },
+    "平*": {
+      "handicap": -0.5,
+      "home_water": 0.93,
+      "away_water": 0.95,
+      "h_change": 0.14,
+      "a_change": -0.09,
+      "trend": "客降"
+    },
+    "港马*": {
+      "handicap": -0.5,
+      "home_water": 0.83,
+      "away_water": 0.97,
+      "h_change": -0.10,
+      "a_change": 0.14,
+      "trend": "主降"
+    }
+  },
+  "euro_companies": {
+    "威*": {
+      "home_odds": 2.15,
+      "draw_odds": 3.25,
+      "away_odds": 3.10,
+      "home_change": -0.35,
+      "draw_change": 0.35,
+      "away_change": 0.20
+    },
+    "立*": {
+      "home_odds": 2.10,
+      "draw_odds": 3.10,
+      "away_odds": 3.00,
+      "home_change": -0.30,
+      "draw_change": 0.10,
+      "away_change": 0.30
+    },
+    "Interwet*": {
+      "home_odds": 2.20,
+      "draw_odds": 3.30,
+      "away_odds": 3.15,
+      "home_change": -0.30,
+      "draw_change": 0.25,
+      "away_change": 0.25
+    },
+    "平博": {
+      "home_odds": 2.49,
+      "draw_odds": 2.97,
+      "away_odds": 2.82,
+      "home_change": 0.00,
+      "draw_change": 0.00,
+      "away_change": 0.00
+    },
+    "必发": {
+      "home_odds": 2.32,
+      "draw_odds": 3.70,
+      "away_odds": 3.25,
+      "home_change": 0.00,
+      "draw_change": 0.00,
+      "away_change": 0.00
+    }
+  },
+  "state_factors": {
+    "home_win_streak": null,
+    "home_loss_streak": null,
+    "away_win_streak": null,
+    "away_loss_streak": null,
+    "home_form_score": null,
+    "away_form_score": null,
+    "home_form_detail": null,
+    "away_form_detail": null,
+    "home_ppg": null,
+    "away_away_ppg": null
+  }
+}
